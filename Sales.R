@@ -66,12 +66,20 @@ CombinedTableP2<-CombinedTablePlay%>%
   group_by(Business.Type)%>%
   filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct'| Business.Type=="Seed Company"| Business.Type=="University")%>%
 mutate(growthN = ((N - dplyr::lag(N, order_by=Year))/dplyr::lag(N, order_by=Year)) * 100)%>%
-  mutate(growthTC= ((TotalCharge - dplyr::lag(TotalCharge))/dplyr::lag(TotalCharge)) * 100)
-  # filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct'| Business.Type=="Seed Company"| Business.Type=="University")
+  mutate(growthTC= ((TotalCharge - dplyr::lag(TotalCharge, order_by= Year))/dplyr::lag(TotalCharge, order_by=Year)) * 100)
 
-
-ggplot(CombinedTableP2, aes(x=as.factor(Year), y=growthN, fill=Business.Type))+
+ggplot(CombinedTableP2, aes(x=Year, y=growthN, fill=Business.Type))+
   geom_bar(position="dodge", stat='identity')
+
+ggplot(CombinedTableP2, aes(x=Year, y=growthTC, fill=Business.Type))+
+  geom_bar(position="dodge", stat='identity')
+
+YTDgrowth<-CombinedTableP2%>%
+  filter(Year<2023)
+
+ggplot(YTDgrowth, aes(x=Year, y=growthN, fill=Business.Type))+
+  geom_bar(position="dodge", stat='identity')
+
 
 
 
@@ -150,6 +158,36 @@ CT6<- CT1%>%
 
 CT6
 
+CT7<- CT1 %>%
+  filter(sizebyCharge=="Large")%>%
+  arrange(AccountName)%>%
+  group_by(AccountName)%>%
+  mutate(growthN = ((N - dplyr::lag(N, order_by=Year))/dplyr::lag(N, order_by=Year)) * 100)%>%
+  mutate(growthTC= ((TotalCharge - dplyr::lag(TotalCharge, order_by= Year))/dplyr::lag(TotalCharge, order_by=Year)) * 100)%>%
+  as.data.frame()
+
+CT8<-CT7%>%  
+group_by(AccountName)%>%
+  do(PLOTS={ggplot(.,aes(x=Year, y=growthTC, fill=Year))+
+      geom_bar(position='dodge', stat="identity")+
+      ggtitle(unique(.$AccountName))})->Mypl2
+
+Mypl2$PLOTS
+
+ggplot(CT7, aes(x=Year, y=growthTC, fill=Year))+
+      geom_bar(position='dodge', stat="identity")+
+      facet_wrap(~AccountName, ncol=5)
+
+ggplot(CT7, aes(x=Year, y=growthN, fill=Year))+
+  geom_bar(position='dodge', stat="identity")+
+  facet_wrap(~AccountName, ncol=5)
+
+CostPerSampleTopAct<-CT7%>%
+  mutate(CostperN=TotalCharge/N)
+
+ggplot(CostPerSampleTopAct, aes(x=Year, y=CostperN, fill=Year))+
+  geom_bar(position='dodge', stat="identity")+
+  facet_wrap(~AccountName, ncol=5)
 
 Assays<-read_sheet("https://docs.google.com/spreadsheets/d/1CUWHfD5ifyulHJyZaJ3FB8m3fYDAYBd5ygFZrok4T8M/edit?usp=drive_link", "WFArchive Counts")
 
@@ -172,5 +210,4 @@ Assays%>%
 Assays%>%
   group_by(Year, Month)%>%
   ggplot(.,aes(x=Month, y=Enterobacteria))+geom_point()+facet_grid(.~Year)
-
 

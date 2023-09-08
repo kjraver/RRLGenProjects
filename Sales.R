@@ -200,8 +200,12 @@ SampleNoChem%>%
   mutate(TotalN= sum(c_across(c(3:48)), na.rm = T))%>%
   as.data.frame()
 
-Assays1<- Assays%>%
+Assays1<- TotalAssays%>%
   group_by(Year, Month)%>%
-  summarise(TotalAssays)
+  summarise(totalassayswc)%>%
+  na.omit(.)
+
+
+  
 
 

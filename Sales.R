@@ -159,14 +159,17 @@ Assays[] <- lapply(Assays, function(x) as.numeric(as.list(x)))
 
 TotalAssays<- Assays%>%
   rowwise()%>%
-  mutate(totalassays = sum(c_across(c(4:59)), na.rm = T))%>%
+  mutate(totalassays = sum(c_across(c(4:59)), na.rm = T))
+
+TotalAssays1<-TotalAssays%>%
   group_by(Year, Month)%>%
   summarise(totalassayswc=sum(totalassays))%>%
   as.data.frame()
 
-TotalAssays%>%Assays
+TotalAssays2<-TotalAssays%>%
   group_by(Year, Month)%>%
-  ggplot(.,aes(x=Month, y=totalassays))+geom_point()+facet_grid(.~Year)
+  ggplot(TotalAssays1,aes(x=Month, y=totalassayswc))+geom_point()+facet_grid(.~Year)
+TotalAssays2
 
 Assays%>%
   group_by(Year, Month)%>%

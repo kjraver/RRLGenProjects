@@ -191,9 +191,23 @@ ggplot(CostPerSampleTopAct, aes(x=Year, y=CostperN, fill=Year))+
 
 Assays<-read_sheet("https://docs.google.com/spreadsheets/d/1CUWHfD5ifyulHJyZaJ3FB8m3fYDAYBd5ygFZrok4T8M/edit?usp=drive_link", "WFArchive Counts")
 
-Assays%>%
+str(Assays)
+
+Assays[] <- lapply(Assays, function(x) as.numeric(as.list(x)))
+
+TotalAssays<- Assays%>%
+  rowwise()%>%
+  mutate(totalassays = sum(c_across(c(4:59)), na.rm = T))
+
+TotalAssays1<-TotalAssays%>%
   group_by(Year, Month)%>%
-  ggplot(.,aes(x=Month, y=ADF))+geom_point()+facet_grid(.~Year)
+  summarise(totalassayswc=sum(totalassays))%>%
+  as.data.frame()
+
+TotalAssays2<-TotalAssays%>%
+  group_by(Year, Month)%>%
+  ggplot(TotalAssays1,aes(x=Month, y=totalassayswc))+geom_point()+facet_grid(.~Year)
+TotalAssays2
 
 Assays%>%
   group_by(Year, Month)%>%
@@ -205,9 +219,34 @@ Assays%>%
 
 Assays%>%
   group_by(Year, Month)%>%
-  ggplot(.,aes(x=Month, y=CF))+geom_point()+facet_grid(.~Year)
+  ggplot(.,aes(x=Month, y=CF))+geom_point()+facet_grid(.~Year)%>%
+ 
 
 Assays%>%
   group_by(Year, Month)%>%
   ggplot(.,aes(x=Month, y=Enterobacteria))+geom_point()+facet_grid(.~Year)
 
+<<<<<<< HEAD
+=======
+SampleNo<-read_sheet("https://docs.google.com/spreadsheets/d/1CUWHfD5ifyulHJyZaJ3FB8m3fYDAYBd5ygFZrok4T8M/edit?usp=drive_link", "TotalSamplesKR")
+
+SampleNo[] <- lapply(SampleNo, function(x) as.numeric(as.list(x)))
+
+SampleNoChem <- SampleNo[seq_len(nrow(SampleNo)) %% 2 == 1, ]   # Extracting even rows
+head(SampleNoChem)
+
+SampleNoChem%>%
+  rowwise()%>%
+  mutate(TotalN= sum(c_across(c(3:48)), na.rm = T))%>%
+  as.data.frame()
+
+Assays1<- TotalAssays%>%
+  group_by(Year, Month)%>%
+  summarise(totalassayswc)%>%
+  na.omit(.)
+
+
+  
+
+
+>>>>>>> 8ddbd19724b8c0dc45dbb6105d8cddd51802aee3

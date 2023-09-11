@@ -121,11 +121,11 @@ CombinedTable%>%
 MyPlot2
 ```
 
-Column {data-width=250}
+Column {data-width=350}
 -----------------------------------------------------------------------
 ### Chart E
 
-```{r}
+```{r fig.height=4.5, fig.width=8.5}
 ggplot(CombinedTableP2, aes(x=Year, y=growthN, fill=Business.Type))+
   geom_bar(position="dodge", stat='identity')+
   ggtitle("Growth Percent in Sample N by Customer Type")
@@ -133,7 +133,7 @@ ggplot(CombinedTableP2, aes(x=Year, y=growthN, fill=Business.Type))+
 
 ### Chart F
 
-```{r}
+```{r fig.height=4.5, fig.width=8.5}
 ggplot(CombinedTableP2, aes(x=Year, y=growthTC, fill=Business.Type))+
   geom_bar(position="dodge", stat='identity')+
   ggtitle("Growth Percent in Total Charge by Customer Type")

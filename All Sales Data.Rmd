@@ -1,0 +1,141 @@
+---
+title: "Sales Data"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(dplyr)
+library(ggplot2)
+library(meantables)
+library(plotly)
+
+sales<- read.csv("C:/Users/rock/Downloads/TotalCharges.csv")
+salesref<- read.csv("C:/Users/rock/OneDrive/Documents/Sales reference.csv")
+
+
+sales%>%
+  select(Year, Month, N, TotalCharge, AccountName, AccountNumber) %>% 
+  # gather(fdDateReceived, fdSampleDesc, TotalDM, AcctNo, na.rm = TRUE) %>% 
+  inner_join(salesref, by = c("AccountName", "AccountNumber")) -> CombinedTable
+
+CPN<-CombinedTable%>%
+  group_by(Year)%>%
+  mutate(ChargeperN=TotalCharge/N)%>%
+  summarise(ChargeperNS=mean(ChargeperN))
+
+
+CPN1<-CombinedTable%>%
+  group_by(Year, Business.Type)%>%
+  mutate(ChargeperN=TotalCharge/N)%>%
+  summarise(ChargeperNS=mean(ChargeperN))%>%
+  as.data.frame()
+
+CT1<-CombinedTable%>%
+  group_by(Year, AccountNumber, Business.Type, AccountName)%>%
+  summarise(across(c(TotalCharge, N),sum))%>%
+  mutate(sizebyN= case_when(N < 100 ~ "Small",
+                          N >= 100 ~"Medium",
+                          N >= 400 ~ 'Large'))%>%
+  mutate(sizebyCharge= case_when(TotalCharge < 5000 ~ "Small",
+                            TotalCharge <= 40000 ~"Medium",
+                            .default = "Large"))
+
+
+CombinedTablePlay<-CombinedTable%>%
+  group_by(Year, Business.Type)%>%
+  summarise(across(where(is.numeric),~ sum(.x, na.rm=TRUE)))
+
+CombinedTableP2<-CombinedTablePlay%>%
+  arrange(Business.Type)%>%
+  group_by(Business.Type)%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct'| Business.Type=="Seed Company"| Business.Type=="University")%>%
+mutate(growthN = ((N - dplyr::lag(N, order_by=Year))/dplyr::lag(N, order_by=Year)) * 100)%>%
+  mutate(growthTC= ((TotalCharge - dplyr::lag(TotalCharge, order_by= Year))/dplyr::lag(TotalCharge, order_by=Year)) * 100)
+
+
+```
+
+Column {data-width=250}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+ggplot(CPN, aes(x=Year, y=ChargeperNS, fill=Year))+
+  geom_bar(stat="identity")+
+  theme_classic()+
+  ggtitle("Charge Per Sample")
+
+```
+
+
+
+### Chart B
+
+```{r}
+CPN2<-CPN1%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct')%>%
+  ggplot(., aes(x=Year, y=ChargeperNS, fill=Business.Type))+
+  geom_bar(position="dodge", stat="identity")+
+  ggtitle(" Average Sample Charge By Business Type")
+  
+CPN2
+```
+
+Column {data-width=250}
+-----------------------------------------------------------------------
+### Chart C
+
+```{r}
+CombinedTable%>%
+  group_by(Year, Business.Type)%>%
+  summarise(Sum_N=sum(N))%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct')%>%
+  mutate(percentage=Sum_N/sum(Sum_N))%>%
+  ggplot(., aes(x=Year, y=percentage, fill=Business.Type, text= Business.Type))+
+  geom_bar(position="dodge", stat="identity")+
+  theme_classic()+
+  ylab("Percentage of Sample N")->MyPlot
+
+MyPlot
+```
+
+### Chart D
+
+```{r}
+CombinedTable%>%
+  group_by(Year, Business.Type)%>%
+  summarise(Sum_TotalCharge=sum(TotalCharge))%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct')%>%
+  mutate(percentage=Sum_TotalCharge/sum(Sum_TotalCharge))%>%
+  ggplot(., aes(x=Year, y=percentage, fill=Business.Type, text= Business.Type))+
+  geom_bar(position="dodge", stat="identity")+
+  theme_classic()+
+  ylab("Percentage of TotalCharge")->MyPlot2
+
+MyPlot2
+```
+
+Column {data-width=250}
+-----------------------------------------------------------------------
+### Chart E
+
+```{r}
+ggplot(CombinedTableP2, aes(x=Year, y=growthN, fill=Business.Type))+
+  geom_bar(position="dodge", stat='identity')+
+  ggtitle("Growth Percent in Sample N by Customer Type")
+```
+
+### Chart F
+
+```{r}
+ggplot(CombinedTableP2, aes(x=Year, y=growthTC, fill=Business.Type))+
+  geom_bar(position="dodge", stat='identity')+
+  ggtitle("Growth Percent in Total Charge by Customer Type")
+```
+

@@ -1,0 +1,108 @@
+---
+title: "Top Accounts"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(flexdashboard)
+library(dplyr)
+library(ggplot2)
+library(meantables)
+library(plotly)
+
+sales<- read.csv("C:/Users/rock/Downloads/TotalCharges.csv")
+salesref<- read.csv("C:/Users/rock/OneDrive/Documents/Sales reference.csv")
+
+
+sales%>%
+  select(Year, Month, N, TotalCharge, AccountName, AccountNumber) %>% 
+  # gather(fdDateReceived, fdSampleDesc, TotalDM, AcctNo, na.rm = TRUE) %>% 
+  inner_join(salesref, by = c("AccountName", "AccountNumber")) -> CombinedTable
+
+CPN<-CombinedTable%>%
+  group_by(Year)%>%
+  mutate(ChargeperN=TotalCharge/N)%>%
+  summarise(ChargeperNS=mean(ChargeperN))
+
+
+CPN1<-CombinedTable%>%
+  group_by(Year, Business.Type)%>%
+  mutate(ChargeperN=TotalCharge/N)%>%
+  summarise(ChargeperNS=mean(ChargeperN))%>%
+  as.data.frame()
+
+CT1<-CombinedTable%>%
+  group_by(Year, AccountNumber, Business.Type, AccountName)%>%
+  summarise(across(c(TotalCharge, N),sum))%>%
+  mutate(sizebyN= case_when(N < 100 ~ "Small",
+                          N >= 100 ~"Medium",
+                          N >= 400 ~ 'Large'))%>%
+  mutate(sizebyCharge= case_when(TotalCharge < 5000 ~ "Small",
+                            TotalCharge <= 40000 ~"Medium",
+                            .default = "Large"))
+
+CT7<- CT1 %>%
+  filter(sizebyCharge=="Large")%>%
+  arrange(AccountName)%>%
+  group_by(AccountName)%>%
+  mutate(growthN = ((N - dplyr::lag(N, order_by=Year))/dplyr::lag(N, order_by=Year)) * 100)%>%
+  mutate(growthTC= ((TotalCharge - dplyr::lag(TotalCharge, order_by= Year))/dplyr::lag(TotalCharge, order_by=Year)) * 100)%>%
+  filter(AccountName=="ADM ALLIANCE NUTRITION, INC."| AccountName=="Alcivia Cooperative"| AccountName=="Big Gain"| AccountName=="CHR Hansen Inc."| AccountName=="Edge Dairy Consulting"| AccountName=="Heritage Cooperative"| AccountName=="Holtz-Nelson Dairy Consulants LLC"|AccountName=="Lallemand Animal Nutrition"| AccountName=="Milk Source"| AccountName=="NutriQuest, LLC"| AccountName=="Papillon Agricultural Company, Inc."| AccountName=="Phibro"| AccountName=="PREMIER COOPERATIVE"| AccountName=="Progressive Dairy Solutions"| AccountName=="Sensenigs Feed Mill-70000840"| AccountName== "Syngenta Enogen"| AccountName=="VITA PLUS CORPORATION")
+
+
+CostPerSampleTopAct<-CT7%>%
+  mutate(CostperN=TotalCharge/N)
+
+
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r Top 10 Accounts 2022, fig.height=4.5, fig.width=10}
+CT22<- CT1%>%
+  group_by(Year, AccountNumber, Business.Type, AccountName)%>%
+  summarise(across(c(TotalCharge, N),sum))%>%
+  filter(TotalCharge > 100000 & Year > 2019 & Year <2023)%>%
+  ggplot(.,aes(x=Year, y=TotalCharge, fill=AccountName))+
+      geom_bar(position="dodge", stat="identity")
+
+CT22
+```
+
+### Chart D
+
+```{r Price Per Sample Year over year, fig.height=4.5, fig.width=11}
+ggplot(CostPerSampleTopAct, aes(x=Year, y=CostperN, fill=Year))+
+  geom_bar(position='dodge', stat="identity")+
+  facet_wrap(~AccountName, ncol=8)
+```
+
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r Top accounts growth (By Charge), fig.height=4.5, fig.width=11}
+ggplot(CT7, aes(x=Year, y=growthTC, fill=Year))+
+      geom_bar(position='dodge', stat="identity")+
+      facet_wrap(~AccountName, ncol=8)
+```
+
+### Chart C
+
+```{r Top Accounts Growth by Sample N, fig.height=4.5, fig.width=11}
+ggplot(CT7, aes(x=Year, y=growthN, fill=Year))+
+  geom_bar(position='dodge', stat="identity")+
+  facet_wrap(~AccountName, ncol=8)
+```
+
+
+

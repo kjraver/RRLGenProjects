@@ -62,7 +62,7 @@ mutate(growthN = ((N - dplyr::lag(N, order_by=Year))/dplyr::lag(N, order_by=Year
 Column {data-width=250}
 -----------------------------------------------------------------------
 
-### Chart A
+### Charge Per Sample
 
 ```{r Charge Per Sample, fig.height=4.5, fig.width=8}
 
@@ -75,7 +75,7 @@ ggplot(CPN, aes(x=Year, y=ChargeperNS, fill=Year))+
 
 
 
-### Chart B
+### Charge per sample by Client Type
 
 ```{r Charge per sample by Client Type, fig.height=4.5, fig.width=8}
 CPN2<-CPN1%>%
@@ -89,13 +89,13 @@ CPN2
 
 Column {data-width=250}
 -----------------------------------------------------------------------
-### Chart C
+### Sample N by Business Type
 
 ```{r Sample N by Business Type, fig.height=4.5, fig.width=8}
 CombinedTable%>%
   group_by(Year, Business.Type)%>%
   summarise(Sum_N=sum(N))%>%
-  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct')%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct'| Business.Type=="University")%>%
   mutate(percentage=Sum_N/sum(Sum_N))%>%
   ggplot(., aes(x=Year, y=percentage, fill=Business.Type, text= Business.Type))+
   geom_bar(position="dodge", stat="identity")+
@@ -105,13 +105,13 @@ CombinedTable%>%
 MyPlot
 ```
 
-### Chart D
+### Total Chrage by Client Type
 
 ```{r Total Chrage by Client Type, fig.height=4.5, fig.width=8}
 CombinedTable%>%
   group_by(Year, Business.Type)%>%
   summarise(Sum_TotalCharge=sum(TotalCharge))%>%
-  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct')%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct'|Business.Type=="University")%>%
   mutate(percentage=Sum_TotalCharge/sum(Sum_TotalCharge))%>%
   ggplot(., aes(x=Year, y=percentage, fill=Business.Type, text= Business.Type))+
   geom_bar(position="dodge", stat="identity")+
@@ -123,7 +123,7 @@ MyPlot2
 
 Column {data-width=350}
 -----------------------------------------------------------------------
-### Chart E
+###  Percentage Year to Year Growth Sample N
 
 ```{r Percentage Year to Year Growth Sample N, fig.height=4.5, fig.width=9}
 ggplot(CombinedTableP2, aes(x=Year, y=growthN, fill=Business.Type))+
@@ -131,7 +131,7 @@ ggplot(CombinedTableP2, aes(x=Year, y=growthN, fill=Business.Type))+
   ggtitle("Growth Percent in Sample N by Customer Type")
 ```
 
-### Chart F
+### Percentage year to year growth Total Charge
 
 ```{r Percentage year to year growth Total Charge, fig.height=4.5, fig.width=9}
 omitdriver<-CombinedTableP2%>%

@@ -1,6 +1,10 @@
 sales<- read_sheet("https://docs.google.com/spreadsheets/d/1FSbQCQnDwg_V20G4lXnkYLzrCr35P7Ym52-HdYccVvA/edit?usp=sharing")
 salesref<- read_sheet("https://docs.google.com/spreadsheets/d/1JXD9MLP1tL66m-tZtf_xYRVc3y5rYuQQCsTujeqX-n8/edit?usp=sharing")
 
+sales<-read.csv("C:/Users/Katie/Documents/GitHub/RRLGenProjects/TotalCharges - ..csv")
+salesref<-read.csv("C:/Users/Katie/Documents/GitHub/RRLGenProjects/Sales reference.csv")
+
+
 gs4_auth(email=raverkatie0@gmail.com)
 devtools::install_github("tidyverse/googlesheets4")
 
@@ -38,7 +42,7 @@ ggplot(CPN, aes(x=Year, y=ChargeperNS, fill=Year))+
   theme_classic()
 
 CPN2<-CPN1%>%
-  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct')%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct'| Business.Type=='Feed Company')%>%
   ggplot(., aes(x=Year, y=ChargeperNS, fill=Business.Type))+
   geom_bar(position="dodge", stat="identity")
   
@@ -58,7 +62,8 @@ CT1
 CombinedTable%>%
   group_by(Year, Business.Type)%>%
   summarise(Sum_N=sum(N))%>%
-  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct')%>%
+  filter(Year<2023)%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct'| Business.Type=="Consultant"| Business.Type=='Seed Company'| Business.Type=="Hay Company")%>%
   mutate(percentage=Sum_N/sum(Sum_N))%>%
   ggplot(., aes(x=Year, y=percentage, fill=Business.Type, text= Business.Type))+
   geom_bar(position="dodge", stat="identity")+
@@ -70,7 +75,8 @@ MyPlot
 CombinedTable%>%
   group_by(Year, Business.Type)%>%
   summarise(Sum_TotalCharge=sum(TotalCharge))%>%
-  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct')%>%
+  filter(Year<2023)%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Allied Industry"|Business.Type=="Mill"|Business.Type=='Farm Direct'| Business.Type=="Consultant"| Business.Type=='Seed Company'| Business.Type=="Hay Company")%>%
   mutate(percentage=Sum_TotalCharge/sum(Sum_TotalCharge))%>%
   ggplot(., aes(x=Year, y=percentage, fill=Business.Type, text= Business.Type))+
   geom_bar(position="dodge", stat="identity")+
@@ -89,7 +95,8 @@ CombinedTablePlay<-CombinedTable%>%
 CombinedTableP2<-CombinedTablePlay%>%
   arrange(Business.Type)%>%
   group_by(Business.Type)%>%
-  filter(Business.Type=="Legacy"|Business.Type=="Driver"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct'| Business.Type=="Seed Company"| Business.Type=="University")%>%
+  filter(Year<2023)%>%
+  filter(Business.Type=="Legacy"|Business.Type=="Allied Industry"|Business.Type=="Legacy/Mill"|Business.Type=="Mill"|Business.Type=='Farm Direct'| Business.Type=="Consultant"| Business.Type=='Seed Company'| Business.Type=="Hay Company")%>%
 mutate(growthN = ((N - dplyr::lag(N, order_by=Year))/dplyr::lag(N, order_by=Year)) * 100)%>%
   mutate(growthTC= ((TotalCharge - dplyr::lag(TotalCharge, order_by= Year))/dplyr::lag(TotalCharge, order_by=Year)) * 100)
 
@@ -101,13 +108,22 @@ ggplot(CombinedTableP2, aes(x=Year, y=growthTC, fill=Business.Type))+
   geom_bar(position="dodge", stat='identity')+
   ggtitle("Growth Percent in Total Charge by Customer Type")
 
-YTDgrowth<-CombinedTableP2%>%
+YTDgrowth<-CT1%>%
   filter(Year<2023)
 
 ggplot(YTDgrowth, aes(x=Year, y=growthN, fill=Business.Type))+
   geom_bar(position="dodge", stat='identity')
 
-
+Growingaccounts<- CT1%>%
+  filter(Year>2021)%>%
+  arrange(AccountName)%>%
+  group_by(AccountName)%>%
+  mutate(growthN = ((N - dplyr::lag(N, order_by=Year))/dplyr::lag(N, order_by=Year)) * 100)%>%
+  mutate(growthTC= ((TotalCharge - dplyr::lag(TotalCharge, order_by= Year))/dplyr::lag(TotalCharge, order_by=Year)) * 100)%>%
+  filter(Year>2021 & TotalCharge>5000) 
+           
+           
+           AccountNumber==8021| AccountNumber== 2066| AccountNumber==9500|AccountNumber==8039|AccountNumber==1181| AccountNumber==150410| AccountNumber==1725|AccountNumber==9032|AccountNumber==1013)
 
 
 CombinedTable%>%
@@ -234,9 +250,15 @@ TotalAssays<- Assays%>%
   mutate(totalassays = sum(c_across(c(4:59)), na.rm = T))
 
 TotalAssays1<-TotalAssays%>%
-  group_by(Year, Month)%>%
+  group_by(Year)%>%#, Month)%>%
   summarise(totalassayswc=sum(totalassays))%>%
   as.data.frame()
+
+ggplot(TotalAssays1, aes(y=totalassayswc, x=Year))+
+  geom_point()+
+  geom_smooth()
+  
+
 
 TotalAssays2<-TotalAssays1%>%
   group_by(Year, Month)%>%

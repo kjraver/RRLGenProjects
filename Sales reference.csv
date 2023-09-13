@@ -1,19 +1,19 @@
 AccountNumber,AccountName,Sample N,Business Type
-8051,Progressive Dairy Solutions,59646,Legacy
+8051,Progressive Dairy Solutions,59646,Consultant
 8000,VITA PLUS CORPORATION,48083,Legacy
 200001,Brasil Lite,39359,Associate Lab
-8031,Edge Dairy Consulting,19915,Legacy
+8031,Edge Dairy Consulting,19915,Consultant
 8043,Milk Source,16717,Driver
-8034,"NutriQuest, LLC",15876,Legacy
+8034,"NutriQuest, LLC",15876,Consultant
 4080,Big Gain,15352,Legacy
 150303,Sensenigs Feed Mill-70000840,14907,Legacy
-8033,Holtz-Nelson Dairy Consultants LLC,14752,Legacy
+8033,Holtz-Nelson Dairy Consultants LLC,14752,Consultant
 462,CHR Hansen Inc.,11417,Allied Industry
 8002,PREMIER COOPERATIVE,11144,Mill
-8014,"ADM ALLIANCE NUTRITION, INC.",10139,Legacy/Mill
+8014,"ADM ALLIANCE NUTRITION, INC.",10139,Legacy
 8017,Alcivia Cooperative,10051,Legacy
 160001,Yarvet,9845,Associate Lab
-150003,Standard Dairy Consultants-70000437,8510,Legacy
+150003,Standard Dairy Consultants-70000437,8510,Consultant
 422,Eastland Feed & Grain,7487,Legacy
 8009,UNITED COOPERATIVE,7255,Legacy
 1354,Cargill Animal Nutrition Innovation,6636,Allied Industry
@@ -21,18 +21,18 @@ AccountNumber,AccountName,Sample N,Business Type
 270001,RRLSpain,6520,Associate Lab
 150004,Powl's Feed Service Inc-70000421,6504,Legacy
 2212,Wisco Feeds,6484,Legacy
-90001,Progressive Dairy Solutions Argentina SA,6406,Legacy
+90001,Progressive Dairy Solutions Argentina SA,6406,Consultant
 2806,Lallemand Animal Nutrition,6366,Allied Industry
-8040,Centerra Coop,6105,Legacy/Mill
+8040,Centerra Coop,6105,Legacy
 257,Northside Elevator,6084,Mill
 3143,Lutz Feed (CFD),5998,Legacy
 3472,Syngenta Enogen,5902,Seed Company
 90056,Coop. Agricola Ganadera Lim. Guillermo Lehmann,5846,Legacy
 3199,Morrison's Custom Feeds (CFD),5702,Legacy
 1945,Gerber Feed Service,5581,Legacy
-8042,Mercer Landmark,5486,Legacy/Mill
-8021,Standard Dairy Consulting - Midwest,5060,Legacy
-8027,ProVision Partners,5056,Legacy/Mill
+8042,Mercer Landmark,5486,Legacy
+8021,Standard Dairy Consulting - Midwest,5060,Consultant
+8027,ProVision Partners,5056,Legacy
 8028,UNITED COOPERATIVE MILL QA,4969,Mill
 5533,"Brown's Feed, Inc.",4867,Legacy
 220001,Mexico,4855,Associate Lab
@@ -41,21 +41,21 @@ AccountNumber,AccountName,Sample N,Business Type
 8037,Phibro,4713,Allied Industry
 4703,Dyna-Gro Seed 0110,4707,Seed Company
 1503,"Corteva Agriscience MCS, LLC - HiDF",4614,Seed Company
-863,Great Plains Livestock Cons. Inc.,4396,Legacy
-331,Echo Ridge Ag Service,4290,Legacy
+863,Great Plains Livestock Cons. Inc.,4396,Consultant
+331,Echo Ridge Ag Service,4290,Consultant
 1585,"Corteva Agriscience MCS, LLC - Hay",4290,Seed Company
 5213,CPC Commodities,4030,Legacy
 60710,NUTREPAMPA LTDA,3951,Legacy
 8032,Hubbard Feeds - Dyersville IA,3934,Legacy
-9138,Alpha Dairy Consulting,3862,Legacy
+9138,Alpha Dairy Consulting,3862,Consultant
 8029,Hubbard Feeds - Iowa City,3721,Legacy
 2291,Green Valley Dairy - Driver Account,3581,Driver
 8039,Phoenix Feeds,3475,Legacy
-4376,"Don Fair Nutritional Consulting, Inc.",3474,Legacy
-9115,"Cleber, Inc.",3467,Legacy
+4376,"Don Fair Nutritional Consulting, Inc.",3474,Consultant
+9115,"Cleber, Inc.",3467,Consultant
 4179,Gold Star Feed & Grain LLC - Sangerfield,3458,Legacy
 1181,JL Analytical Service,3455,Allied Industry
-3713,Auburn Moyer,3365,Legacy
+3713,Auburn Moyer,3365,Consultant
 70002,COOPERATIVA AGRÍCOLA Y LECHERA DE LA UNIÓN LTDA,3271,Mill
 1013,Nutrition Service Company,3268,Legacy
 150008,Stevens Feed Mill-70000334,3185,Legacy
@@ -63,22 +63,22 @@ AccountNumber,AccountName,Sample N,Business Type
 150006,White Oak Mills-70000608,3129,Legacy
 60408,AGROCERES MULTIMIX NUTRIÇÃO ANIMAL,3087,Mill
 6851,Capstone Ranch - Driver Account,3025,Driver
-4065,Rick Tamm/King Fisher,3019,Legacy
+4065,Rick Tamm/King Fisher,3019,Seed Company
 9000,Furst McNess (Lodi),2954,Legacy
 1488,Dairyland Premixes,2824,Legacy
 1056,"Ostby MBA, Inc",2751,Legacy
 8001,CP FEEDS,2720,Mill
 3522,Nutrius LLC -Kingsburg QA Account,2677,Mill
 60135,DSM PRODUTOS NUTRICIONAIS BRASIL,2636,Allied Industry
-2924,Hillltop Nutrition - Tom Zorn,2630,Legacy
+2924,Hillltop Nutrition - Tom Zorn,2630,Consultant
 1173,Renk Seed,2596,Seed Company
-5061,Pine Creek Nutrition Services,2591,Legacy
-9459,Rosecrans Dairy Consulting LLC,2584,Legacy
-9135,ClearView Nutrition,2583,Legacy
+5061,Pine Creek Nutrition Services,2591,Consultant
+9459,Rosecrans Dairy Consulting LLC,2584,Consultant
+9135,ClearView Nutrition,2583,Consultant
 2030,"Papillon Agricultural Company, Inc.",2568,Allied Industry
-9032,Conway Hay Sales,2563,Allied Industry
+9032,Conway Hay Sales,2563,Hay Company
 3909,Beck's Hybrids - Silage Corn,2539,Seed Company
-2041,DEK Progressive Consulting LLC,2538,Legacy
+2041,DEK Progressive Consulting LLC,2538,Consultant
 1398,Van Beek Nutrition,2498,Legacy
 60434,POLI-NUTRI ALIMENTOS S/A,2487,Legacy
 90376,Bioter S A,2486,Legacy
@@ -88,24 +88,24 @@ AccountNumber,AccountName,Sample N,Business Type
 8049,Nobis Agri Science,2340,Legacy
 6133,Northside Elevator - Driver Program Account,2332,Driver
 1300,Super Soy Feeds LLC,2323,Mill
-8038,Renaissance Nutrition,2308,Legacy
+8038,Renaissance Nutrition,2308,Consultant
 60207,PRODAP LTDA,2283,Legacy
-9033,Machado Hay Company,2241,Allied Industry
+9033,Machado Hay Company,2241,Hay Company
 4577,Seedway,2226,Allied Industry
 6387,Syngenta - Silage R&D,2166,Seed Company
 2754,Loudonville Farmers Equity,2156,Legacy
 8050,CBJ Driver,2103,Driver
-9020,A. L. Gilbert Company,2089,Legacy/Mill
-1390,Insight FS - Waupun,2024,Legacy/Mill
+9020,A. L. Gilbert Company,2089,Legacy
+1390,Insight FS - Waupun,2024,Legacy
 4254,Hoover Feeds,1989,Legacy
 150631,Midton Consulting-70000342,1956,Legacy
-6280,North Star Dairy Consulting LLC,1953,Legacy
+6280,North Star Dairy Consulting LLC,1953,Consultant
 210001,Colun NIRConnect,1952,Associate Lab
 3891,The Pennsylvania State University,1938,University
 5100,"Agrovive Biologicals, LLC",1916,Allied Industry
 150628,King's AgriSeeds-70004421,1912,Seed Company
 310001,ABM_Ukraine,1900,Associate Lab
-8008,Insight FS,1874,Legacy/Mill
+8008,Insight FS,1874,Legacy
 330001,Hydrogreen NIRConnect,1850,Associate Lab
 5901,Syngenta - GH,1834,Allied Industry
 8005,HUBBARD FEEDS - IN,1833,Legacy
@@ -113,7 +113,7 @@ AccountNumber,AccountName,Sample N,Business Type
 3273,Innovative Liquids,1770,Allied Industry
 9322,Seley & Co.,1759,Mill
 3151,McDowell & Walker Inc. (CFD),1734,Legacy
-2729,Dairy Performance LLC,1720,Legacy
+2729,Dairy Performance LLC,1720,Consultant
 2213,"Pioneer Hi-Bred International, Inc. TRAC 23091",1706,Seed Company
 2215,Wakarusa Nutritional,1704,Allied Industry
 3524,Nutrius LLC - Hereford QA Account,1697,Mill
@@ -124,7 +124,7 @@ AccountNumber,AccountName,Sample N,Business Type
 1402,Waupun Veterinary Service,1601,Legacy
 90131,Nexus SRL,1590,Legacy
 4137,University of WI - Plant Pathology,1509,University
-3714,"Rapp Dairy Nutrition, LLC",1488,Legacy
+3714,"Rapp Dairy Nutrition, LLC",1488,Consultant
 427,Winfield,1482,Seed Company
 3168,LE Sommer Kidron Inc.,1482,Legacy
 3696,Kendy-Ag,1477,Legacy
@@ -137,25 +137,25 @@ AccountNumber,AccountName,Sample N,Business Type
 513,Farmers Grain and Feed LLC,1398,Legacy
 6184,LAN (Lallemand Animal Nutrition) R&D,1398,Allied Industry
 110071,TMSF,1394,Farm Direct
-3771,Lundquist & Associates (NPI),1392,Legacy
+3771,Lundquist & Associates (NPI),1392,Consultant
 3431,Synergy Feeds - Glenn Noll,1386,Legacy
 4769,WSU Franklin County Extension,1382,University
 7000,Form-A-Feed - New Richmond,1368,
 3363,Bar 20 Dairy Farms,1362,Farm Direct
 90215,Flanker SA (Nutrienso),1356,Legacy
 1251,Pinnacle Livestock Nutrition,1340,Legacy
-9024,Bluehill Ag. Consulting,1328,Legacy
-5088,Peak Nutrition - Brady Wolff,1325,Legacy
+9024,Bluehill Ag. Consulting,1328,Consultant
+5088,Peak Nutrition - Brady Wolff,1325,Consultant
 60683,TROUW NUTRITION BRASIL NUTRICAO ANIMAL LTDA,1322,Allied Industry
 60817,DE HEUS IND. E COM. DE NUTRICAO ANIMAL LTDA,1320,Allied Industry
 130063,"Animal Heath and Mgmt, LLC - AG LAB EXPRESS ACCT",1310,Legacy
-8024,"Nelson Dairy Consultants, Inc.",1288,Legacy
+8024,"Nelson Dairy Consultants, Inc.",1288,Consultant
 70021,VETERQUIMICA S.A,1286,Allied Industry
 4565,Consumer Physics - Verifood,1275,Allied Industry
-1987,Alfalfa Express,1263,Allied Industry
-150009,Rob Kauffman-70000845,1258,Legacy
+1987,Alfalfa Express,1263,Hay Company
+150009,Rob Kauffman-70000845,1258,Seed Company
 5897,Big Gain QA Account,1237,Mill
-8012,Country Visions Cooperative - Larsen,1222,Legacy/Mill
+8012,Country Visions Cooperative - Larsen,1222,Legacy
 4579,Enogen Dairy/Feedlot,1209,Allied Industry
 4166,H Rockwell and Son (CFD),1206,Legacy
 4073,Hubner Seed - Plot Samples,1165,Seed Company
@@ -163,36 +163,36 @@ AccountNumber,AccountName,Sample N,Business Type
 2607,Nutrient Recovery and Upcycling,1130,Allied Industry
 6396,Green Valley Dairy Harvest - Driver,1122,Driver
 320001,Russia_Premix NIRConnect,1120,Allied Industry
-3207,"G.W.J. Consulting Services - Greg Johnson, DVM",1114,Legacy
+3207,"G.W.J. Consulting Services - Greg Johnson, DVM",1114,Consultant
 9038,JDR Livestock Management Servi,1112,Legacy
 5356,Purina Animal Nutrition - Alyssa Clements,1111,Legacy
 110002,Wolfe Brothers Inc.,1111,Legacy
 952,Mizer Milling,1101,Legacy
 3627,AgReliant Genetics,1098,Seed Company
 9500,Elberta Valley Ag,1095,Allied Industry
-6935,Nutrition Service Company - Dave Strebe,1081,Legacy
-9316,Tony Lopes Dairy,1080,Legacy
+6935,Nutrition Service Company - Dave Strebe,1081,Consultant
+9316,Tony Lopes Dairy,1080,Farm Direct
 5589,Egg Innovations Organic Feed LLC QA,1077,Mill
 914,"Medford Cooperative, Inc.",1075,Legacy
 70138,SEMILLAS KWS CHILE LTDA,1071,
 7478,Milk Source Harvest,1061,Driver
-815,Brian Knutzen,1060,Legacy
+815,Brian Knutzen,1060,Consultant
 3178,NewWest Feeds,1051,Legacy
-5114,"Nutri-Consultants, Inc.",1018,Legacy
+5114,"Nutri-Consultants, Inc.",1018,Consultant
 3975,Mibelloon Dairy,1013,Farm Direct
 4656,Legend Seeds Inc.,1011,Seed Company
-1861,Cows Come First,1010,Legacy
+1861,Cows Come First,1010,Consultant
 4958,Dendulk DF,1008,Farm Direct
 100160,"Schaumann Slovensko, spol. s.r.o.",1005,
-788,"Badgerland Nutrition, Inc.",985,Legacy
+788,"Badgerland Nutrition, Inc.",985,Consultant
 70082,SEMILLAS TUNICHE LTDA,984,
 64043,COASUL,975,
 60317,AUSTER NUTRICAO ANIMAL,973,
-1142,Nathaniel Steiner,965,Legacy
+1142,Nathaniel Steiner,965,Consultant
 90137,Conecar S.A.,962,
 61703,NUTRIVITAL-OESTE RISSO DISTR. DE PROD. AGROP. LTDA,961,
 4649,"Utah State University Dept of Plants, Soils",959,University
-3529,Top Priority Nutrition,958,Legacy
+3529,Top Priority Nutrition,958,Consultant
 4662,LG Seeds - Midwest,958,Seed Company
 2680,King's AgriSeeds Inc.,953,Seed Company
 3740,Hydrogreen Global Technologies,953,Allied Industry
@@ -204,7 +204,7 @@ AccountNumber,AccountName,Sample N,Business Type
 269,"Gateway FS, Inc.",917,Legacy
 3012,Westford Milling Company (CFD),908,Legacy
 5130,Peterson Corn Genetics,908,Seed Company
-9220,Foglio Hay Sales & Tank Lines,907,Allied Industry
+9220,Foglio Hay Sales & Tank Lines,907,Hay Company
 8036,Bayer/Hubner Seeds - PO#4513082863,904,Seed Company
 1438,Harvey's Milling,889,Legacy/Mill
 6015,ANC - Russ Funke,886,Legacy
@@ -213,46 +213,46 @@ AccountNumber,AccountName,Sample N,Business Type
 90039,Nutrefeed S.A.,875,Legacy
 2289,"Horizon Consulting Service, LLC",873,Legacy
 60157,TOPNUTRI NUTRICAO ANIMAL,867,
-798,KS Dairy Consulting,864,Legacy
+798,KS Dairy Consulting,864,Consultant
 9351,"Gavilon, LLC.",860,Mill
 6127,CBJ Farms,856,Farm Direct
-1725,Cornerstone Ag Management LLC,850,Legacy
+1725,Cornerstone Ag Management LLC,850,Consultant
 2606,University of Wisconsin-Madison,847,University
 844,Leibfried Feed Service,834,Legacy
 9070,Monteiro Dairies,833,Farm Direct
-9108,Valley Nutrition-Dan Waldner,815,Legacy
+9108,Valley Nutrition-Dan Waldner,815,Consultant
 61263,SYNGENTA PROTEÇÃO DE CULTIVOS LTDA,814,Allied Industry
 4263,J & B Feeds,813,Mill
 6258,Evergreen Dairy,811,Farm Direct
 5902,Syngenta - NK,810,Seed Company
-6012,CCF-Bowman Consulting - Addison Bowman,807,Legacy
+6012,CCF-Bowman Consulting - Addison Bowman,807,Consultant
 90163,Hugo Quattrochi,799,Seed Company
 70166,DAIRY LINK SPA,795,
 3287,Circle C Six,791,Allied Industry
 60230,COTRIJAL COOPERATIVA AGROPECUÁRIA E INDUSTRIAL,789,
-3462,TMK Farm Service,781,Allied Industry
+3462,TMK Farm Service,781,Legacy
 460,Performance Feed and Seed Inc.,778,Seed Company
 4327,Morning Star Dairy,776,Farm Direct
 1821,Clinton Center Feeds,773,Legacy
-110070,Luna's Trucking,770,Allied Industry
-150086,R&J Dairy Consulting-70000431,767,Legacy
+110070,Luna's Trucking,770,Hay Company
+150086,R&J Dairy Consulting-70000431,767,Consultant
 61831,COOPERATIVA AURIVERDE,765,
 1201,Star Blends,762,Legacy
 3141,Wisconsin Integrated Cropping Systems Trial,758,Allied Industry
 834,"Legacy Seeds, Inc.",752,Seed Company
-4422,Dairy CSI,751,Legacy
+4422,Dairy CSI,751,Consultant
 5659,"Fox Dairy, Ltd",749,Farm Direct
 1838,"Animal Health and Management, LLC.",748,Legacy
 1859,Milan Center Feed & Grain Inc,748,Legacy
 3019,Breunig Agricultural Priority,744,Legacy
 150018,JB-Hubbard Feeds-70004004,743,Legacy
 2366,Granville Milling,733,Legacy
-2589,"Independent Dairy Consultants, Inc.",729,Legacy
-9015,J.D. Heiskell & Co,725,Legacy/Mill
+2589,"Independent Dairy Consultants, Inc.",729,Consultant
+9015,J.D. Heiskell & Co,725,Legacy
 4413,Morrison Custom Feeds QA Account,718,Mill
 60711,PROVALAB DIAGNOSTICO VETERINARIO,705,
 2763,Maysville Elevator,689,Legacy
-9061,Fred Rau Dairy Inc.,686,Legacy
+9061,Fred Rau Dairy Inc.,686,Farm Direct
 869,Sioux Nation Ag Center - Sioux Falls,682,Allied Industry
 9423,Airoso Dairy,678,Farm Direct
 70237,TOROMIRO S.A.,672,
@@ -261,7 +261,7 @@ AccountNumber,AccountName,Sample N,Business Type
 150020,Adam Zurin-70000645,667,Legacy
 9175,Milky Way Dairy,661,Farm Direct
 6343,UW Madison Agronomy-Shawn Conley,660,University
-2926,Vine Valley Nutrition - Don Burkard,656,Legacy
+2926,Vine Valley Nutrition - Don Burkard,656,Consultant
 3840,Utica Feed,655,Legacy
 5028,Iest Family Farms,654,Farm Direct
 1220,Seymour Flour Mill,650,Legacy
@@ -271,7 +271,7 @@ AccountNumber,AccountName,Sample N,Business Type
 191,International Stock Food,638,Allied Industry
 6501,CHR Hansen - Special Feedlot FO SU21,638,Allied Industry
 3283,Valley View Milling,637,Legacy
-1879,KEL Nutrition,634,Legacy
+1879,KEL Nutrition,634,Consultant
 3255,Kathryn Elliott,631,Legacy
 1749,Central Plains Milling,626,Legacy
 7069,CHR Hansen - PH Research Trials,624,Allied Industry
@@ -282,9 +282,9 @@ AccountNumber,AccountName,Sample N,Business Type
 90152,Nutralmix S.R.L.,616,
 2068,Ajinomoto Animal Nutrition North America,610,Allied Industry
 9440,Four J Farms,610,Farm Direct
-2179,Dairy Solutions LLC - Kelly Bean,608,Legacy
+2179,Dairy Solutions LLC - Kelly Bean,608,Consultant
 4005,Lowe's Pellet and Grain QA Account,607,Mill
-9096,Long Valley Hay Co.,607,Allied Industry
+9096,Long Valley Hay Co.,607,Hay Company
 9031,Rio Blanco Dairy,606,Farm Direct
 5039,Full Circle Jerseys,605,Farm Direct
 5828,United Animal Health,605,Allied Industry
@@ -297,7 +297,7 @@ AccountNumber,AccountName,Sample N,Business Type
 110013,Kasper Dairy,588,Farm Direct
 9449,Legacy Ranches-Pixley,587,Farm Direct
 60416,RIBER - KWS SEMENTES,585,
-9404,Marty Martinez Farms,582,Allied Industry
+9404,Marty Martinez Farms,582,Hay Company
 4236,Wisco Feeds QA Account,580,Mill
 130044,Van Winkle Dairy,575,Farm Direct
 90284,Agro Acopio de Gustavo Mago,573,
@@ -326,9 +326,9 @@ AccountNumber,AccountName,Sample N,Business Type
 9056,Stanley Bell,532,Legacy
 6028,ANC - Bill Keough,531,Legacy
 79,"Berlin Feed, Inc.",528,Legacy
-150456,Nutri-Consultants Inc.-70004141,525,Legacy
+150456,Nutri-Consultants Inc.-70004141,525,Consultant
 5564,Empet Dairy Consulting (CFD),524,Legacy
-7370,United Dairy Group LLC,522,Legacy
+7370,United Dairy Group LLC,522,Consultant
 752,A. L. Gilbert Company - QA Account,519,Mill
 100895,Evonik Operations GmbH,517,Associate Lab
 5280,"Faria Farms, Inc.",513,Farm Direct
@@ -339,14 +339,14 @@ AccountNumber,AccountName,Sample N,Business Type
 70006,AGROCOR S.A,505,
 4321,Larson Dairy Inc.,503,Farm Direct
 6554,MSU Plant Pathology,500,University
-9007,Semper Hay and Grain,499,Allied Industry
+9007,Semper Hay and Grain,499,Legacy
 5736,UW Blaine Dairy - DRIVER,497,Driver
 100123,Niendorfer Landerzeuger-GmbH,494,Associate Lab
 1241,Agricola Pampa Baja,493,
 60122,PREMIX,492,
 24,Lone Oaks,490,Farm Direct
 5442,University of Minnesota-Dayana,487,University
-8052,Breeze Dairy Group,486,Farm Direct
+8052,Breeze Dairy Group,486,Driver
 60546,M CASSAB COMERCIO E INDUSTRIA LTDA,486,
 90192,Manfrey Coop. de Tamberos de Com. e Ind.,482,
 4408,Phoenix Feeds - Organix,480,Allied Industry
@@ -359,7 +359,7 @@ AccountNumber,AccountName,Sample N,Business Type
 4150,Oathoudt Farm Supply,469,Legacy
 6645,Grand View Dairy,468,Farm Direct
 90258,KWS Argentina SA,465,
-1481,Mill Creek Consulting,463,Legacy
+1481,Mill Creek Consulting,463,Consultant
 9279,Mesa Verde Trading Co.,463,Allied Industry
 150410,4ward Ag.-Bruce Kreider-70004497,462,
 410001,Turkey_NIRConnect,462,Associate Lab
@@ -367,7 +367,7 @@ AccountNumber,AccountName,Sample N,Business Type
 90158,Tacural Alimentos S.A.,459,
 100439,Phibro Animal Health SA,458,Allied Industry
 90104,Compañía Agroindustrial La Oriental S.A.,457,
-9048,Martin Hay Sales,454,Allied Industry
+9048,Martin Hay Sales,454,Hay Company
 2368,Fagundes Dairy,453,Farm Direct
 3253,Boehning Dairy LLC,448,Farm Direct
 4373,Lime Ridge QA Account,447,Mill
@@ -379,20 +379,20 @@ AccountNumber,AccountName,Sample N,Business Type
 3775,Forage Genetics International (Calibrate),437,Seed Company
 110018,Wolfe Pac Pellets,437,Mill
 3644,Laughery Valley Ag Coop,436,Legacy
-4635,FG Consulting LLC,431,Legacy
+4635,FG Consulting LLC,431,Consultant
 130080,Northern Sky Dairy - AG LAB EXPRESS ACCT,427,Farm Direct
 9160,Fernoak Farms,426,Farm Direct
 3239,Kansas State University - Brouk Lab,424,University
 5166,"Mathews Dairy, LLC",424,Driver
 6259,Tradition Farms,424,Farm Direct
-6392,"Erro Hay Sales, Inc.",421,Allied Industry
+6392,"Erro Hay Sales, Inc.",421,Hay Company
 5148,Ata Sancak,420,Legacy
 2665,Rijlaarsdam Ranch,418,Farm Direct
 70025,FUNDACIÓN CHILENA DE CULTURA,416,
 61356,HELIX,415,
 2765,Tammy Booth,414,Legacy
 60517,NATURAL SAUDE E NUTRICAO ANIMAL LTDA – EPP,412,
-8035,"Nutrition Professionals, Inc.",411,Legacy
+8035,"Nutrition Professionals, Inc.",411,Consultant
 2730,Sunrise Co-op - Fremont,410,Legacy
 3910,Beck's Hybrids - Alfalfa and Forage,409,Seed Company
 6199,Arroyo Seco,408,Farm Direct
@@ -422,31 +422,31 @@ AccountNumber,AccountName,Sample N,Business Type
 6374,Native Microbials,384,Allied Industry
 215,Didion Ethanol-QA,383,Mill
 100626,"M. P. Trade, spol.s. r. o.",381,
-286,Arden C Landis,380,Legacy
+286,Arden C Landis,380,Consultant
 110124,ZX Ranch Simplot Land & Livestock,379,Farm Direct
 2681,Alforex - Advanced NDFD,378,Allied Industry
 3946,Wilbur-Ellis (Pacific),378,Seed Company
 9264,Terra Linda Dairy,377,Farm Direct
 60519,DSM- GOIANIA,376,Allied Industry
 110022,SunRidge Dairy,376,Farm Direct
-9152,James Mello Hay Sales,375,Allied Industry
+9152,James Mello Hay Sales,375,Hay Company
 5266,Lallemand Animal Nutrition - Richard Scuderi,374,Allied Industry
 6126,United Ag LLC dba Dairy Fountain,374,Farm Direct
-6172,Integrity Dairy Consulting,371,Legacy
+6172,Integrity Dairy Consulting,371,Consultant
 260001,Gerber and Sons NIRConnect,371,Associate Lab
 2624,Didion Ethanol-R & D,370,Mill
-2918,Heath Penick,370,Legacy
+2918,Heath Penick,370,Consultant
 5056,Avi Kwa Ame Farms,370,Farm Direct
 70010,SOCIEDAD AGRÍCOLA SANTA SARA S.A,368,
 562,Frank's Feed Mill,367,Legacy
 4154,Presidio Farms,367,Farm Direct
 5985,Lallemand Animal Nutrition Research - Kip Karges,367,Allied Industry
-3206,Wenger's Ag - Mark Wenger,366,Legacy
+3206,Wenger's Ag - Mark Wenger,366,Consultant
 4804,KEMSAV LLC,366,Allied Industry
 5095,Augusta Co-Op Farm Bureau Inc QA Account,363,Mill
-9103,David Long,360,Legacy
+9103,David Long,360,Consultant
 9355,CT Commodities INC.,360,Mill
-1644,Dr. Kevin Shinners,356,Legacy
+1644,Dr. Kevin Shinners,356,University
 718,Hubbard Feeds- Mankato,355,Legacy
 3246,Hofa Park Dairy Solutions,355,Legacy
 3073,Agro Liquid,354,Allied Industry
@@ -454,7 +454,7 @@ AccountNumber,AccountName,Sample N,Business Type
 9004,"Nutri-Systems, Inc.",353,Allied Industry
 4229,Sioux Nation Ag Center - Dairy Account,352,Allied Industry
 4664,Baladna Food Industries W.L.L.,352,Allied Industry
-6072,Bryan Zeiset,351,Legacy
+6072,Bryan Zeiset,351,Consultant
 1962,Gwerder Dairy,350,Farm Direct
 6197,Legacy Farms,346,Farm Direct
 4412,University of Florida Animal Science Dept,345,University
@@ -469,17 +469,17 @@ AccountNumber,AccountName,Sample N,Business Type
 6901,Phoenix Feeds of Maine,337,Legacy
 4700,Novera Protein,335,Mill
 5243,McVey Dairy Consulting - Matt McVey,333,Legacy
-3528,Live Oak Nutrition--Brad Bogdanich,331,Legacy
+3528,Live Oak Nutrition--Brad Bogdanich,331,Consultant
 90491,Forage Genetics International (Calibrate),331,Seed Company
 60170,BOM NEGOCIO INDUSTRIA E COMERCIO,330,
 4363,K and R Water Truck Inc.,329,Allied Industry
-150432,CK Nutrition-70004132,326,Legacy
-2013,Scott Myers,325,Legacy
+150432,CK Nutrition-70004132,326,Consultant
+2013,Scott Myers,325,Consultant
 2586,"Arizona Grain, Inc./Arizona Plant Breeders",323,Seed Company
-110044,Bob Nichols,323,Legacy
-130089,Great Plains Livestock Cons - AG LAB EXPRESS ACCT,322,Legacy
+110044,Bob Nichols,323,Consultant
+130089,Great Plains Livestock Cons - AG LAB EXPRESS ACCT,322,Consultant
 2546,Triple T Farms - Alvin Peachy,321,Farm Direct
-5044,Priority Hay Company,321,Allied Industry
+5044,Priority Hay Company,321,Hay Company
 110007,Beranna Dairy,320,Farm Direct
 3062,Brost Farms,319,Farm Direct
 61175,CARGILL ALIMENTOS,319,Allied Industry
@@ -488,13 +488,13 @@ AccountNumber,AccountName,Sample N,Business Type
 100210,VisscherHolland,318,
 100087,Sano - Moderni vyziva zvirat spol. sr.o.,317,
 130045,BritAm Nutritional Concepts Inc. - AG LAB EXPRESS,317,
-9077,Pereira Hay Co.,316,Allied Industry
+9077,Pereira Hay Co.,316,Hay Company
 2834,Simplot,315,Allied Industry
 3808,Sterr Farms,315,Farm Direct
 5746,All Around Ag,315,Allied Industry
 5194,Revere Seed,314,Seed Company
 100638,Farmsaat AG,313,Legacy
-130126,"Dellait, LLC-AG LAB EXPRESS ACCT",313,Legacy
+130126,"Dellait, LLC-AG LAB EXPRESS ACCT",313,Consultant
 4694,New Mexico State University - ASC Artesia,312,University
 5326,RRL - Peru,312,Associate Lab
 9081,SBS AG,312,Allied Industry
@@ -503,7 +503,7 @@ AccountNumber,AccountName,Sample N,Business Type
 110106,"TLK Dairy, Inc.",310,Farm Direct
 230001,Nutrition Service Company,310,Allied Industry
 5188,Grotegut Dairy Farm Inc.,309,Farm Direct
-9051,Sierra Vista Consulting,308,Legacy
+9051,Sierra Vista Consulting,308,Consultant
 1047,Barenbrug USA,307,Allied Industry
 1651,Arm and Hammer,307,Allied Industry
 70096,NUTRIAL S.A,307,
@@ -521,8 +521,8 @@ AccountNumber,AccountName,Sample N,Business Type
 60129,FAZENDA SAO FRANCISCO,298,
 90062,El Guaymallen S.A.,297,
 2584,Prairie Hybrid Seeds,294,Seed Company
-4629,"New Enterprise Ag Services, LLC - Jim Eshelman",293,Legacy
-720,"Hueber Feeds, LLC",292,Allied Industry
+4629,"New Enterprise Ag Services, LLC - Jim Eshelman",293,Consultant
+720,"Hueber Feeds, LLC",292,Legacy
 3782,"Belstra Milling Company, Inc.",292,Mill
 4524,"Lely North America, Inc.",292,Allied Industry
 6834,Caprock Dairy 2 - Driver Account,292,Driver
@@ -530,7 +530,7 @@ AccountNumber,AccountName,Sample N,Business Type
 9362,HRD Ranches INC.,291,Farm Direct
 6179,"Purina Mills, Inc. - Caledonia",290,Legacy
 3767,Enogen Trial/Phd R&D,289,Seed Company
-3752,Jamie Perry - Dairy Advantage,288,Legacy
+3752,Jamie Perry - Dairy Advantage,288,Consultant
 9359,Curti Family Inc,288,Legacy
 110063,Nick DeRuyter Dairy,288,Farm Direct
 391,Southwest Farm Services,286,Allied Industry
@@ -539,8 +539,8 @@ AccountNumber,AccountName,Sample N,Business Type
 9269,Dairyland Farms,283,Farm Direct
 892,Doctor's Choice - Equi-Shine,282,Legacy
 3677,Mattos Bros. Dairy,281,Farm Direct
-8025,"Barton, Kiefer & Associates",280,Legacy
-4102,Dave Wilcox,278,Legacy
+8025,"Barton, Kiefer & Associates",280,Consultant
+4102,Dave Wilcox,278,Consultant
 5739,Tuls Dairy,278,Farm Direct
 9342,Lakeshore Dairy,278,Farm Direct
 60531,FAZENDA BOM RETIRO - AMAURI,278,
@@ -553,7 +553,7 @@ AccountNumber,AccountName,Sample N,Business Type
 3323,Diamond Valley Ranch,273,Farm Direct
 150013,Cargill (Mid-Atlantic) -70000059,272,Allied Industry
 5976,"Dellait, LLC",271,Allied Industry
-3607,South Valley Hay,270,Allied Industry
+3607,South Valley Hay,270,Hay Company
 90394,Provimi Argentina SA,270,Allied Industry
 4342,Sandy Loam Dairy,269,Farm Direct
 6026,ANC - JC Land Consulting (Schultz),269,Legacy
@@ -566,9 +566,9 @@ AccountNumber,AccountName,Sample N,Business Type
 4382,Narrowsburg Feed and Grain (CFD),266,Legacy
 63377,FAZENDA SANTO ANTONIO,266,
 9121,"University of CA, Davis",265,University
-9158,"Frank S Brown, LLC",265,Legacy
-5223,Mountain West Ag Services,264,Legacy
-1475,Bradley Heins,263,Legacy
+9158,"Frank S Brown, LLC",265,Consultant
+5223,Mountain West Ag Services,264,Consultant
+1475,Bradley Heins,263,Consultant
 3799,Silver Edge Coop QA Account,263,Mill
 5737,Lost Trail,263,Farm Direct
 110052,"Silver Butte Holsteins, Inc.",263,Farm Direct
@@ -588,7 +588,7 @@ AccountNumber,AccountName,Sample N,Business Type
 3264,Stoller USA,255,Allied Industry
 62082,COMPASS MINERALS,254,Mill
 2066,Papillon Agricultural Company - Kauffman,253,Allied Industry
-3895,Virtus Nutrition QA Account,253,Allied Industry
+3895,Virtus Nutrition QA Account,253,Mill
 70127,CIS SEMILLAS S.A,252,
 734,Intensive Dairy Care,250,Allied Industry
 5443,CP Feeds - Wrightstown Mill QA,250,Mill
@@ -602,36 +602,36 @@ AccountNumber,AccountName,Sample N,Business Type
 9069,Dover Dairy,245,Farm Direct
 61867,COOPRATA,245,
 4501,University of Wisc. - Dan Schaefer Lab,244,University
-2799,MB Einink Corp,243,Legacy
+2799,MB Einink Corp,243,Consultant
 3196,Rock River Lab - New York,243,
 61334,COOPERATIVA AGRICOLA AGUA SANTA,242,
-3189,Western Milling Northern Hay Division,241,Allied Industry
+3189,Western Milling Northern Hay Division,241,Hay Company
 4792,Pioneer - Dann Bolinger,241,Seed Company
-1480,Cashton Farm Supply,239,Allied Industry
-3393,"Carlisle Dairy & Forage Consulting, LLC",238,Legacy
+1480,Cashton Farm Supply,239,Legacy
+3393,"Carlisle Dairy & Forage Consulting, LLC",238,Consultant
 100218,Landgut Plau GmbH,236,
-110029,Ast Hay Company,236,Allied Industry
+110029,Ast Hay Company,236,Hay Company
 3338,Moore Farms Feed Mill (CFD),233,Mill
 711,"Heartland Nutrition, Inc.",232,Legacy
 3820,Commodity Blenders (Holtz Nelson),232,Legacy
 90310,Caraguata S.A. Ind. Com. Inmob. Agrop.,232,
 6053,ANC - Ken Steele,231,Legacy
-1976,Ag Consulting Team,230,Legacy
+1976,Ag Consulting Team,230,Consultant
 2049,Anatevka Dairy,230,Farm Direct
 2632,Pacific Sun Dairy,227,Farm Direct
 9228,DeGroot Dairy,227,Farm Direct
 90323,VS ONCATIVO S.A.,227,
 60348,DISPRA DISTRIBUIDORA,226,
 130079,Wildwood Dairy,225,Farm Direct
-1843,Brasil Hay Sale,224,Allied Industry
+1843,Brasil Hay Sale,224,Hay Company
 130078,Ian Wood AG LAB EXPRESS,224,Legacy
-2073,"Golden Dakota Farms, LLC",223,Legacy
+2073,"Golden Dakota Farms, LLC",223,Farm Direct
 150035,Delmarva Feed & Farm-70000096,223,Legacy
 150010,Lancaster Vet Associates-70000286,222,Legacy
 150863,The Nature Conservancy-70004557,222,Allied Industry
 243,Country Hills Animal Health,221,Legacy
 581,Cooperative Farmers Elevator,221,Legacy
-2927,George Jarrett - Cows Come First,221,Legacy
+2927,George Jarrett - Cows Come First,221,Consultant
 6991,"Mitchell Veterinary Service, PLLC",221,Legacy
 442,UW Madison:Department of Animal Science,220,University
 60301,SEMENTES AGROCERES,220,
@@ -646,12 +646,12 @@ AccountNumber,AccountName,Sample N,Business Type
 486,Farmers Elevator Company,215,Legacy
 5299,Oak View Dairy,215,Farm Direct
 5813,CHR Hansen TMR Hygiene Project,215,Allied Industry
-9365,Leonardo Hay,215,Allied Industry
+9365,Leonardo Hay,215,Hay Company
 948,Sioux Nation Ag Center - Kimball,214,Allied Industry
 60400,AGROBELLA ALIMENTOS LTDA,214,
 100347,MAZZOLENI SPA,214,
 2611,Johann Dairy,213,Farm Direct
-130106,North Central Feed Products - AG LAB EXPRESS ACCT,213,Allied Industry
+130106,North Central Feed Products - AG LAB EXPRESS ACCT,213,Legacy
 3209,CP Feeds - Valders Mill QA,212,Mill
 4477,"JM Larson, Inc.",212,Legacy
 90253,Lacteos La Ramada S.A.,212,
@@ -665,7 +665,7 @@ AccountNumber,AccountName,Sample N,Business Type
 5738,Mas Cow,208,Farm Direct
 150450,Hallmark Feeds Inc-70000185,208,
 4232,"UC Cooperative Extension, Kings County",207,University
-6228,Standard Dairy Nutrition - Matt Leise,207,Legacy
+6228,Standard Dairy Nutrition - Matt Leise,207,Consultant
 60847,PECUARIA NUTRICAO ANIMAL,207,
 1801,ADM Feed and Pet Depot,206,Mill
 9083,Manuel & Alda Lawrence Dairy,206,Farm Direct
@@ -678,27 +678,27 @@ AccountNumber,AccountName,Sample N,Business Type
 4017,Mount Eaton Elevator,201,
 61205,CAPUL- COOPERATIVA AGROPECUARIA DE UNAI,201,
 60410,AGROPECUARIA BOQUEIRAO,200,
-100884,Syngenta,200,Allied Industry
+100884,Syngenta,200,Seed Company
 95,Meadow Creek Enterprise,199,Farm Direct
 7040,Legacy Farms Harvest,199,Farm Direct
-1240,Integrity Nutrition Services,197,Legacy
+1240,Integrity Nutrition Services,197,Consultant
 1561,Bob Eash,197,Legacy
-9106,DD Hay Sales,197,Allied Industry
+9106,DD Hay Sales,197,Hay Company
 71,B & B Feeds Inc.,196,Legacy
 4164,JDS Seeds,196,Seed Company
-9154,Hyder's Hay Service,196,Allied Industry
-9224,"VV Hay Sales, INC",196,Allied Industry
-9283,Maggini Trucking,196,Allied Industry
-9432,Brasil Hay Service Inc.,196,Allied Industry
+9154,Hyder's Hay Service,196,Hay Company
+9224,"VV Hay Sales, INC",196,Hay Company
+9283,Maggini Trucking,196,Hay Company
+9432,Brasil Hay Service Inc.,196,Hay Company
 70085,SOCIEDAD AGRÍCOLA LA ROTUNDA LTDA,195,
 110271,Verbree Dairy,195,Farm Direct
 9246,Van Beek Brother's Dairy,194,Farm Direct
 150024,Hoober Feeds-70000213,194,Legacy
-5261,Brad DeBauche,193,Legacy
+5261,Brad DeBauche,193,Consultant
 70229,AGROPECUARIA LECHE DEL BÍO BÍO S.A,193,
-1540,Joe Roling,192,Legacy
+1540,Joe Roling,192,Consultant
 61530,DEVEDOR - 3RLAB,192,
-5129,Bennet Crochet,191,Legacy
+5129,Bennet Crochet,191,Consultant
 62466,IFNMG,191,
 64010,NOVO HORIZONTE INDUSTRIA DE ALIMENTOS LTDA,190,
 1268,Stephenson Marketing Co-op,189,Legacy
@@ -707,16 +707,16 @@ AccountNumber,AccountName,Sample N,Business Type
 5716,Cranberry Creek Cranberries,189,Allied Industry
 90008,Rock River Lab Argentina,188,
 61423,RACOES VENTANIA COMERCIAL AGROVENTANIA PILUCIO,187,
-1642,"Gingell Feed Consultants, Inc.",186,Legacy
+1642,"Gingell Feed Consultants, Inc.",186,Consultant
 90211,Los Vascos SRL,186,
 150433,Franklin Feed-70001244,186,Legacy
 380001,MN_Cargill NIRConnect,186,Associate Lab
 63908,SYNGENTA SEEDS,185,Allied Industry
 100925,Alltech Estonia,185,Allied Industry
 90139,Lacau y Cía S.A.,184,
-3057,Chris Muegge,183,Legacy
+3057,Chris Muegge,183,Consultant
 3512,Silver Stream Dairy,183,Farm Direct
-5102,So Cal Hay,183,Allied Industry
+5102,So Cal Hay,183,Hay Company
 7382,US Sorghum Checkoff,183,Allied Industry
 61524,FABRICA-CAMPO RACOES E MINERAIS,183,
 100782,Väätsa Agro AS,183,
@@ -729,13 +729,13 @@ AccountNumber,AccountName,Sample N,Business Type
 150016,K & K Feeds-70000247,181,Legacy
 110021,Black Cat Dairy,180,Farm Direct
 420001,Mexico_MGM,180,
-3162,San Joaquin Valley Hay Growers Association,179,Allied Industry
-3218,Timothy Berndt,179,Legacy
-6884,"Traders Creek Consulting, LLC",179,Allied Industry
+3162,San Joaquin Valley Hay Growers Association,179,Hay Company
+3218,Timothy Berndt,179,Consultant
+6884,"Traders Creek Consulting, LLC",179,Consultant
 60329,NUTRATTA NUTRICAO ANIMAL LTDA,179,
 4066,"Master Renovations, Inc.",178,Allied Industry
 110059,Eagle Ridge Dairy,178,Farm Direct
-1244,Sherry Smith,177,Legacy
+1244,Sherry Smith,177,Consultant
 7045,CHR Hansen - Ruminant Research,177,Farm Direct
 90081,GTP SRL,177,
 60802,COMIGO - COOPE. AGRO. PROD. SUDOESTE GOIANO,176,
@@ -751,7 +751,7 @@ AccountNumber,AccountName,Sample N,Business Type
 110079,Swan Falls Dairy,173,Farm Direct
 3935,Farmers Grain and Feed QA Account,171,Mill
 90102,Semillas del Oeste SRL,171,
-2481,Gerber & Sons,170,Legacy
+2481,Gerber & Sons,170,Consultant
 60809,LIBRA NUTRICAO ANIMAL UNID.2,170,
 70095,ALBERTO MATTHEI E HIJOS LTDA,169,
 70345,LÁCTEOS TÁMESIS LIMITADA.,169,
@@ -761,14 +761,14 @@ AccountNumber,AccountName,Sample N,Business Type
 3306,River Country Cooperative Athens - QA Account,167,Mill
 6248,Minnich Poultry Mill QA,167,Mill
 9207,Hamstra Dairy,167,Farm Direct
-4389,Blue Ridge Ag Consulting,166,Legacy
-9189,Sam Livingston Trucking,166,Allied Industry
-644,Agri-Tech Consulting,165,Legacy
+4389,Blue Ridge Ag Consulting,166,Consultant
+9189,Sam Livingston Trucking,166,Hay Company
+644,Agri-Tech Consulting,165,Consultant
 2410,Rodoni Ranches,165,Farm Direct
 3236,Reisdorf Bros. Inc (CFD),165,Legacy
 110272,Veenhouwer Dairy,165,Farm Direct
 3149,Zinpro Corporation,164,Allied Industry
-3262,MMT Ag Transport,164,Allied Industry
+3262,MMT Ag Transport,164,Hay Company
 4800,Cashton Farm Supply Mill QA Account,164,Mill
 5125,Vista Grande Dairy,164,Farm Direct
 110173,"Scarrow Dairy Farm, LLC.",164,Farm Direct
@@ -777,11 +777,11 @@ AccountNumber,AccountName,Sample N,Business Type
 6828,Tri Iest Family Farms,162,Farm Direct
 6927,Advanta Sorghum Argentina,162,Seed Company
 61462,MINERTHAL PRODUTOS AGROPECUARIOS LTDA,162,
-5293,Custer Nutrition,161,Legacy
+5293,Custer Nutrition,161,Consultant
 61185,SLO AGROPECUÁRIA LTDA,161,
 100331,Micro Nutritions,161,Allied Industry
 4570,Duct Tape Farms,160,Farm Direct
-9267,Tom Kroes,160,Legacy
+9267,Tom Kroes,160,Consultant
 100461,Kastanienhof Rave KG,160,Legacy
 2100,Kieler Farms Inc.,159,Farm Direct
 150021,Royal Advantage LLC-70000841,158,Legacy
@@ -805,7 +805,7 @@ AccountNumber,AccountName,Sample N,Business Type
 6027,ANC - Kelly Ducat,152,Legacy
 6847,Heartland Feed Services,152,Legacy
 9516,Fernandes Dairy,152,Farm Direct
-130057,Progressive Dairy Solutions - AG LAB EXPRESS ACCT,152,Legacy
+130057,Progressive Dairy Solutions - AG LAB EXPRESS ACCT,152,Consultant
 150128,Willard Horning-23384713,152,Legacy
 3304,Star Blends QA Account,151,Mill
 7317,NRGene,151,Associate Lab
@@ -828,16 +828,16 @@ AccountNumber,AccountName,Sample N,Business Type
 439,Farmers Mid County Feed,145,Legacy
 60128,CARGILL,145,Allied Industry
 90140,Mitikile SA,145,
-110057,"Progressive Dairy Solutions, Inc-HIGH DESERT ACT",145,Legacy
+110057,"Progressive Dairy Solutions, Inc-HIGH DESERT ACT",145,Consultant
 110161,Fraser Seeds,145,Seed Company
 4296,Ty & Jerry Merkel - Merkline Dairy,144,Farm Direct
 4364,Roy V Witwer Co,144,Legacy
 6352,UW Alfalfa Yield Project,144,University
-9027,Gerald Higginbotham,144,Legacy
+9027,Gerald Higginbotham,144,Consultant
 61262,FOCO AGRONEGOCIO - SERGEN,144,
-150522,Mark Hoover-70004176,144,Legacy
+150522,Mark Hoover-70004176,144,Consultant
 4521,Penn State Department of Plant Science,143,University
-9297,Cullum Hay,143,Allied Industry
+9297,Cullum Hay,143,Hay Company
 100733,Tierarztpraxis Wetter,143,
 4733,Dutch Cowboy Dairy,142,Farm Direct
 5434,Slick Dairy Farm,142,Farm Direct
@@ -845,8 +845,8 @@ AccountNumber,AccountName,Sample N,Business Type
 61357,NEOVIA,142,
 90230,AAPRESID,142,
 1884,Miley Holstein Farms,141,Farm Direct
-9460,Sierra Nutrition Group,141,Legacy
-9118,Nevada Hay Connection,140,Allied Industry
+9460,Sierra Nutrition Group,141,Consultant
+9118,Nevada Hay Connection,140,Hay Company
 9213,M.F. Rosa Dairy,140,Farm Direct
 3755,Phibro Corvallis Research Center,139,Allied Industry
 4128,Greenville Livestock Inc.,139,Legacy
@@ -879,13 +879,13 @@ AccountNumber,AccountName,Sample N,Business Type
 894,"Marathon Feed & Grain, LLC",131,Legacy
 6434,Brandner Dairy,131,Farm Direct
 7041,Descanso Dairy Harvest,131,Farm Direct
-110043,"Bale Express, LLC",131,Allied Industry
+110043,"Bale Express, LLC",131,Hay Company
 9045,Griffioen Dairies,129,Farm Direct
 63455,PROVITA,129,Allied Industry
 552,"Sci-Tech Premixes, Inc.",128,Mill
 90005,Audano Producciones S.R.L.,128,
-1824,PHD R& D,127,Legacy
-1889,Alvin S Leid,127,Legacy
+1824,PHD R& D,127,Consultant
+1889,Alvin S Leid,127,Consultant
 2788,Tillema Farms,127,Farm Direct
 3694,UW Madison - BES Dept.,127,University
 9028,F & K Commodities,127,Legacy
